@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth smooth-transitions">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>ОТНАЧАЛО | Дай нов живот на мебелите си</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        .smooth-transitions {
+            transition: 1s all ease;
+        }
+        .selected {
+            background-color: #002856; /* Tailwind blue-600 */
+            color: white;
+            border-color: #002856;
+        }
+
+        .bg-svg {
+            background-image: url('background.jpg');
+            background-size:auto; /* Adjust as needed */
+            background-repeat: no-repeat; /* Prevent the SVG from repeating */
+            background-size:cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="smooth-transitions">
+    <nav class="z-20 fixed py-5 md:absolute bg-white md:bg-customWhite md:bg-white text-mainColor top-0 left-0 w-full md:py-12 px-10 z-10 border border-1">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="text-3xl gap-5 font-bold flex flex-wrap justify-center">
+                <img src="logo-bez-fon.svg" class="h-10" alt="">
+                <a class="h-full block" href="index.html">ОТНАЧАЛО</a>   
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="block lg:hidden flex flex-wrap text-mainColor">
+                <a href="#otnachalo-rules" class="border-red border-1 bg-white p-5 font-bold">ВИЖ КАК</a>
+                <button class="text-mainColor focus:outline-none" id="menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu -->
+            <div class="hidden lg:flex space-x-4" id="menu">
+                <a href="#otnachalo-rules" class="">ВИЖ КАК</a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="w-full bg-white lg:hidden hidden z-20" id="mobile-menu">
+            <a href="#otnachalo-rules" class="block text-mainColor hover:text-mainColor px-4 py-2 ">ВИЖ КАК</a>
+        </div>
+    </nav>
+
+    
+    <div class="h-screen pt-10 md:pt-0 mb-12 relative md:mb-0 overflow-hidden">
+        <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay muted loop>
+            <source src="videoplayback.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- 60% width section, full width on mobile -->
+        <div class="sm:h-screen w-full flex relative bg-customDark z-10 items-center justify-center md:py-40 lg:py-0 text-center" id="begin-now">
+            <div class="max-w-5xl px-6">
+              <!-- Headings -->
+              <h1 class="text-3xl md:text-5xl font-semibold mb-4 text-mainColor ">ПРАЩАШ <b>СТАРО</b>.</h1>
+              <h1 class="text-3xl md:text-5xl font-semibold mb-4 text-mainColor ">ПОЛУЧАВАШ <b>НОВО</b>.</h1>
+              <h1 class="text-3xl md:text-5xl font-semibold mb-5 text-mainColor ">МЕБЕЛИТЕ ТИ ПОЧВАТ <b>ОТНАЧАЛО</b>.</h1>
+          
+              <!-- Paragraph -->
+              <p class="text-md mb-6 text-mainColor">
+                Ние ще преобразим твоите маси, столове, шкафове, гардероби и още много други.
+              </p>
+
+              <!-- Email Form -->
+              <form class="flex flex-col sm:flex-row gap-3 justify-center">
+                <input type="email" placeholder="ПЛЕЙСХОЛДЪР ТУК" class="flex-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-mainColor text-mainColor" />
+                <button type="submit" onclick="alert('това не работи още, драсни ми мейл ако желаеш')"class="p-3 bg-mainColor text-white rounded-md hover:bg-mainColor focus:outline-none focus:ring-2 focus:ring-mainColor">
+                  ЗАПИШИ МЕ
+                </button>
+              </form>
+            </div>
+          </div>
+          
+    </div>
+
+    <div class="flex flex-wrap gap-4 w-full justify-center py-8 bg-mainColor text-mainColor" id="otnachalo-rules">
+        <div class="w-full text-5xl text-white text-center py-6 pb-10">
+            <h1 class="block "><b>КАК РАБОТИ?</b></h1>
+        </div>
+        <!-- Card -->
+        <div class="w-full lg:w-1/3 bg-white rounded-md border-mainColor shadow-md hover:text-white hover:bg-mainColor hover:border-white hover:border-1 hover:border"> 
+            <div class="p-4 flex flex-wrap text-center justify-center lg:text-left lg:justify-between">
+                <div class="bg-mainColor text-white text-lg font-bold rounded-full w-8 h-8 flex items-center justify-center mb-2">1</div>
+                
+                <h3 class="text-3xl font-semibold mb-2 w-full ">ПРАТИ НИ СНИМКА</h3>
+                <p>Снимай старата ти мебел с телефона и ни я прати за да преценим как можем да ти помогнем</p>
+                <a href="#subscribe">
+                    
+                </a>
+            </div>
+        </div>
+        <!-- Card -->
+        <div class="w-full lg:w-1/3 bg-white rounded-md border-black shadow-md hover:text-white hover:bg-mainColor hover:border-white hover:border-1 hover:border"> 
+            <div class="p-4 flex flex-wrap text-center justify-center lg:text-left lg:justify-between">
+                <div class="bg-mainColor text-white text-lg font-bold rounded-full w-8 h-8 flex items-center justify-center mb-2">2</div>
+                
+                <h3 class="text-3xl font-semibold mb-2 w-full ">КОНСУЛТАЦИЯ</h3>
+                <p>Ще направим бърза консултация за да обсъдим обща идея</p>
+                <a href="#subscribe">
+                    
+                </a>
+            </div>
+        </div>
+        <!-- Card -->
+        <div class="w-full lg:w-1/3 bg-white rounded-md shadow-md hover:text-white hover:bg-mainColor hover:border-white hover:border-1 hover:border"> 
+            <div class="p-4 flex flex-wrap text-center justify-center lg:text-left lg:justify-between">
+                <div class="bg-mainColor text-white text-lg font-bold rounded-full w-8 h-8 flex items-center justify-center mb-2">3</div>
+                
+                <h3 class="text-3xl font-semibold mb-2 w-full ">ПРАЩАШ НИ МЕБЕЛИТЕ</h3>
+                <p>Дай ни адрес откъдето да съберем твоята маса, столове или шкафче и продължи с деня си.</p>
+                <a href="#subscribe">
+                    
+                </a>
+            </div>
+        </div>
+        <!-- Card -->
+        <div class="w-full lg:w-1/3 bg-white rounded-md shadow-md hover:text-white hover:bg-mainColor hover:border-white hover:border-1 hover:border"> 
+            <div class="p-4 flex flex-wrap text-center justify-center lg:text-left lg:justify-between">
+                <div class="bg-mainColor text-white text-lg font-bold rounded-full w-8 h-8 flex items-center justify-center mb-2">4</div>
+                
+                <h3 class="text-3xl font-semibold mb-2 w-full ">РЕНОВАЦИЯТА</h3>
+                <p>След като твоя проект пристигне при нас, ние ще поемем щафетата с реновирането му.</p>
+                <a href="#subscribe">
+                    
+                </a>
+            </div>
+        </div>
+        <!-- Card -->
+        <div class="w-full lg:w-1/3 bg-white rounded-md shadow-md hover:text-white hover:bg-mainColor hover:border-white hover:border-1 hover:border"> 
+            <div class="p-4 flex flex-wrap text-center justify-center lg:text-left lg:justify-between">
+                <div class="bg-mainColor text-white text-lg font-bold rounded-full w-8 h-8 flex items-center justify-center mb-2">5</div>
+                
+                <h3 class="text-3xl font-semibold mb-2 w-full ">РЕВИЗИЯ</h3>
+                <p>През цялото време ще те държим в течение. Когато имаме версия, която мислим, че ще те възхити ще поискаме твоето <b>мнение</b>! След това ще приложим корекции спрямо твоето виждане.</p>
+                <a href="#subscribe">
+                    
+                </a>
+            </div>
+        </div>
+        <!-- Card -->
+        <div class="w-full lg:w-1/3 bg-white rounded-md shadow-md hover:text-white hover:bg-mainColor hover:border-white hover:border-1 hover:border"> 
+            <div class="p-4 flex flex-wrap text-center justify-center lg:text-left lg:justify-between">
+                <div class="bg-mainColor text-white text-lg font-bold rounded-full w-8 h-8 flex items-center justify-center mb-2">6</div>
+                
+                <h3 class="text-3xl font-semibold mb-2 w-full ">ЩАСТИЕ</h3>
+                <p>Когато сме готови,както си стоиш в кухнята, ще получиш мейл и SMS с информация, че сме готови и трябва да вземеш своите мебели с които да започнеш <b>отначало</b></p>
+                <a href="#subscribe">
+                    
+                </a>
+            </div>
+        </div>
+        <div class="w-full flex flex-wrap justify-center">
+            <a href="#begin-now" type="button" class="rounded-md text-5xl font-bold lg:block mt-3 p-10 bg-white text-mainColor hover:bg-mainColor hover:text-white hover:border-white hover:border-1 hover:border focus:outline-none focus:ring-2 focus:ring-mainColor">
+                ДАЙ ИМ НОВ ЖИВОТ
+            </a>
+        </div>
+    </div>
+      
+
+    <footer class="bg-mainColor text-center text-white flex flex-wrap p-10">
+        <div class="justify-center w-full">
+            <p>
+                &copy; <span id="current-year"></span> otnachalo - all rights reserved
+            </p>
+        </div>
+    </footer>
+    
+    
+    <script>
+        // JavaScript to update the year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+<script>
+    function increment(id) {
+        const input = document.getElementById(id);
+        input.value = parseInt(input.value) + 1;
+    }
+
+    function decrement(id) {
+        const input = document.getElementById(id);
+        if (input.value > 0) {
+            input.value = parseInt(input.value) - 1;
+        }
+    }
+</script>
+<script>
+    document.querySelectorAll('label.time').forEach(label => {
+        label.addEventListener('click', function () {
+            // Remove 'selected' class from all labels
+            document.querySelectorAll('label.time').forEach(lbl => lbl.classList.remove('selected'));
+
+            // Add 'selected' class to the clicked label
+            this.classList.add('selected');
+
+            // Check the associated radio button
+            const radioButton = document.getElementById(this.htmlFor);
+            radioButton.checked = true;
+        });
+    });
+    
+    document.querySelectorAll('label.place').forEach(label => {
+        label.addEventListener('click', function () {
+            // Remove 'selected' class from all labels
+            document.querySelectorAll('label.place').forEach(lbl => lbl.classList.remove('selected'));
+
+            // Add 'selected' class to the clicked label
+            this.classList.add('selected');
+
+            // Check the associated radio button
+            const radioButton = document.getElementById(this.htmlFor);
+            radioButton.checked = true;
+        });
+    });
+</script>
+</body>
+</html>
